@@ -1,5 +1,6 @@
-import logo from "./views/logo.svg";
-import "../assets/App.css";
+import logo from "../logo.svg";
+import "../styles/App.css";
+import NoMatch from "./NoMatch";
 
 function App() {
   return (
