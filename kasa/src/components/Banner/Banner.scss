@@ -1,0 +1,37 @@
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    color: #ff6060;
+}
+
+.kasa-logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 68px;
+    width: 210px;
+    padding-left: 40px;
+    padding-top: 45px;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    padding-top: 40px;
+    gap: 57px;
+    font-size: 24px;
+    list-style-type: none;
+}
+nav li{
+    align-items: center;
+}
+nav li a {
+    color: #ff6060;
+    
+    
+}
+/*Problème de  repérage lien "A propos" !!!
+.apropos {
+    text-decoration: none;
+}*/
