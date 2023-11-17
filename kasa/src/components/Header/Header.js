@@ -1,18 +1,32 @@
 import KasaLogo from "../../assets/KasaLogo.png";
 import "./Header.scss";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="kasa-banner banner">
+    <header className="kasa-header">
       <img src={KasaLogo} alt="logo Kasa" className="kasa-logo" />
-      <nav>
+      <nav id="sidebar">
         <ul>
           <li className="accueil">
-            {/* Link router (NavLink pour pouvoir faire la barre en dessous) */}
-            <a href="Home.js">Accueil</a>
+            <NavLink
+              to="/Home"
+              exact
+              activeClassName="active"
+              className="nav-link"
+            >
+              Accueil
+            </NavLink>
           </li>
-          <li className="apropos">
-            <a href="APropos.js">A propos</a>
+          <li>
+            <NavLink
+              to="/APropos"
+              exact
+              activeClassName="active"
+              className="nav-link"
+            >
+              A propos
+            </NavLink>
           </li>
         </ul>
       </nav>

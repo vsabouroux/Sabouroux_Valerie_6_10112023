@@ -1,18 +1,18 @@
 header {
-  .banner {
-    display: flex;
-    justify-content: space-between;
-    color: #ff6060;
-  }
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   .kasa-logo {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
+    align-items: center;
     height: 68px;
     width: 210px;
-    padding-left: 40px;
-    padding-top: 45px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   nav {
@@ -20,23 +20,22 @@ header {
       display: flex;
       justify-content: flex-end;
       padding-right: 40px;
-      padding-top: 40px;
+      padding-top: 70px;
       gap: 57px;
       font-size: 24px;
       list-style-type: none;
+      margin-right: 100px;
     }
     li {
       align-items: center;
     }
-  }
-
-  a {
-    color: #ff6060;
-    text-decoration: none;
-    transition: border-bottom 0.3s ease;
-    &:focus {
-      border-bottom: 2px solid #ff6060;
+    .nav-link.active {
+      text-decoration: underline;
+      color: #60ff95;
+    }
+    .nav-link {
+      color: #ff6060;
     }
   }
-  /* focus ou visited pour que le lien reste lorsque l'UI a cliqué sur une page ?*/
 }
+/* focus ou visited pour que le lien reste lorsque l'UI a cliqué sur une page ?*/

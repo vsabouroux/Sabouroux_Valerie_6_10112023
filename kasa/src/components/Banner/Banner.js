@@ -1,10 +1,11 @@
-//import Logo Kasa from
 import "./Banner.scss";
 function Banner({ img, texte }) {
   return (
-    <div className="Header">
+    <div className="Banner">
       <img src={img} alt="Côte escarpée, falaises abruptes" />
-      <h1>{texte}</h1>
+      <div className="overlay">
+        <h1>{texte}</h1>
+      </div>
     </div>
   );
 }
