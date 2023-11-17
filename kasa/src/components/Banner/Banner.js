@@ -1,6 +1,11 @@
 //import Logo Kasa from
 import "./Banner.scss";
-function Banner({ children }) {
-  return <div className="kasa-banner">{children}</div>;
+function Banner({ img, texte }) {
+  return (
+    <div className="Header">
+      <img src={img} alt="Côte escarpée, falaises abruptes" />
+      <h1>{texte}</h1>
+    </div>
+  );
 }
 export default Banner;
