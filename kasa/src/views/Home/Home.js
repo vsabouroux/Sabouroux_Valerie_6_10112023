@@ -10,7 +10,7 @@ import "./Home.scss";
 function Home() {
   useEffect(() => {
     document.title = `Kasa`;
-    // console.log("test");
+    console.log("test");
   }, []);
 
   return (
