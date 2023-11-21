@@ -1,17 +1,13 @@
 import "./Card.scss";
 
-// Récupération des Logements sur le localhost du BackEnd ??? je ne crois pas puisqu'ils fournissent un fichier avec les logements
-//On va pouvoir récupérer les 2 "props" (title et imageUrl) dans le composant
-function Card({ title, pictures }) {
+// "Card" est le composant qui décrit de quoi il est fait et la boucle "map" est faite sur la page qui doit afficher TOUS les logements soit la Home
+function Card({ title, picture }) {
   return (
     <section className="Card">
       <div className="ContainerCard">
         <div className="TitreAppart">
+          <img src={picture} alt="logement" />
           <h1>{title}</h1>
-          {pictures.map((picture, index) => (
-            // eslint-disable-next-line no-template-curly-in-string
-            <img key={index} src={picture} alt="logement-${index}" />
-          ))}
         </div>
       </div>
     </section>

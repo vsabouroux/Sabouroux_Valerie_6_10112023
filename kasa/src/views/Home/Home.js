@@ -8,19 +8,15 @@ import Footer from "../../components/Footer/Footer";
 import Logements from "../../datas/Logements.json";
 import "./Home.scss";
 
+//Création boucle avec map pour afficher tous les logements présents dans le fichier Logements.json
 function Home() {
-  // useEffect(() => {
-  //document.title = `Kasa`;
-  // console.log("test");
-  //}, []);
-
   return (
     <div className="App">
       <Header />
       <Banner img={coteImage} texte="Chez vous, partout et ailleurs" />
-      <div className="Card">
-        {Logements.map((logement, id) => (
-          <Card key={id} title={logement.title} pictures={logement.pictures} />
+      <div className="Appart">
+        {Logements.map(({ id, title, cover }) => (
+          <Card key={id} title={title} picture={cover} />
         ))}
       </div>
       <Footer />
@@ -28,9 +24,3 @@ function Home() {
   );
 }
 export default Home;
-
-//</div><Card title="Titre de la location" /><Card title="Test" />//
-//<Card title="Test2" />
-//<Card title="Test3" />
-//<Card title="Test4" />
-//<Card title="Test5" />
