@@ -8,16 +8,16 @@ import Footer from "../../components/Footer/Footer";
 import Logements from "../../datas/Logements.json";
 import "./Home.scss";
 
-//Création boucle avec map pour afficher tous les logements présents dans le fichier Logements.json
 function Home() {
   return (
     <div className="App">
       <Header />
       <Banner img={coteImage} texte="Chez vous, partout et ailleurs" />
       <div className="Appart">
+        {/*Création boucle avec map pour afficher tous les logements présents dans le fichier Logements.json*/}
         {Logements.map(({ id, title, cover }) => (
           <Link key={id} to={`/FicheLogement/${id}`}>
-            {/* Utilisez le composant Link pour créer un lien vers la page FicheLogement avec l'ID du logement */}
+            {/* Le composant Link pour créer un lien vers la page FicheLogement avec l'ID du logement */}
             <Card title={title} picture={cover} />
           </Link>
         ))}
