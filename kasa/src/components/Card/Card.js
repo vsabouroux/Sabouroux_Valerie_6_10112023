@@ -6,7 +6,7 @@ function Card({ title, picture }) {
     <section className="Card">
       <div className="ContainerCard">
         <div className="TitreAppart">
-          <img src={picture} alt="logement" />
+          <img src={picture} alt="logement" className="CardImage" />
           <h1>{title}</h1>
         </div>
       </div>

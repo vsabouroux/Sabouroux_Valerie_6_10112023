@@ -12,13 +12,14 @@
   transform: translateY(-150%);
   text-align: center;
   justify-content: center;
-  color: #c01b1b; // Couleur du texte
+  color: white; // Couleur du texte
   font-weight: medium;
   font-size: 28px;
   /*width: 1240px;*/
 }
+/*Je voudrais faire une superposition sur l'image pour la rendre plus foncée avec Overlay*/
 img {
-  width: 100%;
+  width: 1240px;
   object-fit: cover;
   border-radius: 25px;
   max-height: 223px; // Hauteur maximale

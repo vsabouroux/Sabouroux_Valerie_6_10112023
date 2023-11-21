@@ -15,12 +15,12 @@ function APropos() {
       />
       <div className="APropos">
         <CollapseItem
-          title="Élément 1"
+          title="Fiabilité"
           content="Donc là on génère le contenu de manière statique"
         />
-        <CollapseItem title="Élément 2" content="Contenu de l'élément 2" />
-        <CollapseItem title="Élément 3" content="Contenu de l'élément 3" />
-        <CollapseItem title="Élément 4" content="Contenu de l'élément 4" />
+        <CollapseItem title="Respect" content="Contenu de Respect" />
+        <CollapseItem title="Service" content="Contenu de Service" />
+        <CollapseItem title="Sécurité" content="Contenu de Sécurité" />
       </div>
 
       <Footer />

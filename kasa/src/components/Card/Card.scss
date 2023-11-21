@@ -1,7 +1,10 @@
 .Card {
-  margin: 50px 60px 50px 60px;
+  display: flex;
+  margin: 30px 30px 50px 28px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.Card .TitreAppart img h1 {
+.Card .TitreAppart h1 {
   display: flex;
   /*flex-direction: row;
   flex-wrap: wrap;
@@ -12,7 +15,9 @@
   /*width: 100%;
   height: 829px;*/
 }
-
+.Card h1 {
+  padding-left: 10px;
+}
 .ContainerCard {
   width: 340px;
   height: 340px;
@@ -25,6 +30,9 @@
   align-items: flex-end;
   color: white;
 }
-/*h1 {
-  font-size: 18px;
-}*/
+.CardImage {
+  width: 100%;
+  height: 250px;
+  margin: auto;
+  border-radius: 10px;
+}

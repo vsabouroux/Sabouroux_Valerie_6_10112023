@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Banner from "../../components/Banner/Banner";
 import coteImage from "../../assets/cote.png";
@@ -16,9 +16,13 @@ function Home() {
       <Banner img={coteImage} texte="Chez vous, partout et ailleurs" />
       <div className="Appart">
         {Logements.map(({ id, title, cover }) => (
-          <Card key={id} title={title} picture={cover} />
+          <Link key={id} to={`/FicheLogement/${id}`}>
+            {/* Utilisez le composant Link pour créer un lien vers la page FicheLogement avec l'ID du logement */}
+            <Card title={title} picture={cover} />
+          </Link>
         ))}
       </div>
+      {/*<FicheLogement />*/}
       <Footer />
     </div>
   );

@@ -1,11 +1,12 @@
 .CollapseItem {
-  border: 1px solid #ddd;
+  /*border: 1px solid #ddd;*/
   margin-bottom: 30px;
 }
 
 .CollapseHeader {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
   cursor: pointer;
   background-color: #ff6060;
@@ -20,4 +21,5 @@
 }
 h2 {
   font-size: 24px;
+  color: white;
 }

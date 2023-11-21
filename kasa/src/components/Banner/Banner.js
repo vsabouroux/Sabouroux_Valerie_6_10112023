@@ -1,4 +1,5 @@
 import "./Banner.scss";
+
 function Banner({ img, texte }) {
   return (
     <div className="Banner">
