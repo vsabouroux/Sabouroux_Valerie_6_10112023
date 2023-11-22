@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 import Banner from "../../components/Banner/Banner";
 import coteImage from "../../assets/cote.png";
 import Card from "../../components/Card/Card";
+
 import Footer from "../../components/Footer/Footer";
 import Logements from "../../datas/Logements.json";
 import "./Home.scss";

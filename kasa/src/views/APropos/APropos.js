@@ -11,6 +11,7 @@ function APropos() {
       <Header />
       <Banner
         img={montagneImage}
+        className="montagneImage"
         alt="vallée bordée de hautes montagnes au printemps"
       />
       <div className="APropos">
