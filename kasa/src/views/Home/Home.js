@@ -23,7 +23,7 @@ function Home() {
           </Link>
         ))}
       </div>
-      {/*<FicheLogement />*/}
+      {/*<FicheLogement ici ???/>*/}
       <Footer />
     </div>
   );
