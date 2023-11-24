@@ -1,27 +1,27 @@
-.banner {
+.Banner {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 25px;
   margin: 10px 100px 10px 100px;
-}
-
-.overlay {
-  position: absolute;
-  /*top: 10%;*/
-  left: 30%;
-  transform: translateY(-150%);
-  text-align: center;
-  justify-content: center;
-  color: white; // Couleur du texte
-  font-weight: medium;
-  font-size: 28px;
-  /*width: 1240px;*/
-}
-/*Je voudrais faire une superposition sur l'image pour la rendre plus foncée avec Overlay*/
-img {
-  width: 1240px;
-  object-fit: cover;
-  border-radius: 25px;
-  max-height: 223px; // Hauteur maximale
-  margin: 10px 100px 10px 100px;
+  .overlay {
+    position: absolute;
+    /*top: 10%;*/
+    /* left: 30%;*/
+    /*transform: translateY(-150%);*/
+    text-align: center;
+    justify-content: center;
+    color: white; // Couleur du texte
+    font-weight: medium;
+    font-size: 28px;
+    /*width: 1240px;*/
+  }
+  /*Je voudrais faire une superposition sur l'image pour la rendre plus foncée avec Overlay*/
+  img {
+    width: 1240px;
+    object-fit: cover;
+    border-radius: 25px;
+    max-height: 223px; // Hauteur maximale
+    margin: 10px 100px 10px 100px;
+  }
 }

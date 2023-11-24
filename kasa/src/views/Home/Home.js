@@ -13,17 +13,18 @@ function Home() {
   return (
     <div className="App">
       <Header />
-      <Banner img={coteImage} texte="Chez vous, partout et ailleurs" />
-      <div className="Appart">
-        {/*Création boucle avec map pour afficher tous les logements présents dans le fichier Logements.json*/}
-        {Logements.map(({ id, title, cover }) => (
-          <Link key={id} to={`/FicheLogement/${id}`}>
-            {/* Le composant Link pour créer un lien vers la page FicheLogement avec l'ID du logement */}
-            <Card title={title} picture={cover} />
-          </Link>
-        ))}
-      </div>
-      {/*<FicheLogement ici ???/>*/}
+      <main>
+        <Banner img={coteImage} texte="Chez vous, partout et ailleurs" />
+        <div className="Appart">
+          {/*Création boucle avec map pour afficher tous les logements présents dans le fichier Logements.json*/}
+          {Logements.map(({ id, title, cover }) => (
+            <Link key={id} to={`/FicheLogement/${id}`}>
+              {/* Le composant Link pour créer un lien vers la page FicheLogement avec l'ID du logement */}
+              <Card title={title} picture={cover} />
+            </Link>
+          ))}
+        </div>
+      </main>
       <Footer />
     </div>
   );
