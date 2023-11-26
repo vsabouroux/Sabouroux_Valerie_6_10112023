@@ -1,42 +1,53 @@
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import "./FicheLogement.scss";
+import { useParams } from "react-router-dom";
+import Slideshow from "../../components/Slideshow/Slideshow";
+import CollapseItem from "../../components/Collaps/Collaps";
 
-/*revoir méthode children !*/
+// useParmas = hook utilisé pour extraire les paramètres de l'URL dans un composant fonctionnel. Ici on veut récupérer que les "pictures" du logement
+// et on se repèrera avec l'id du logement
 
-function FicheLogement() {
-  let title = "";
-  let pictures = "";
-  // description,
-  let host = "";
-  // rating,
-  // location,
-  // equipments,
-  // tags
-
+const FicheLogement = ({ logements }) => {
   // Récupérer les informatio du logement, grace al ID de URL et le data.json
+  const { id } = useParams();
+  console.log("ID du logement :", id);
+  const logement = logements.find((logement) => logement.id === id);
+  console.log("Logements :", logements);
+  console.log("Logement trouvé :", logement);
+  if (!logement) {
+    // Gérer le cas où le logement n'est pas trouvé
+    return <p>Logement introuvable</p>;
+  }
+
+  const { title, host, location, description, equipments } = logement;
 
   return (
     <div>
       <Header />
-      <p>Fiche Logement en chantier...</p>
+
       <section>
-        <div className="Caroussel">
-          <img
-            src={pictures}
-            alt="description logement"
-            className="LogementImage"
-          />
-          {/*} <div class="back-arrow" id="backArrow"> <div class="back-arrow" id="backArrow">&#129144;</div></div>*/}
-          {/* <button  &#62;"  className="nextarrow"></button> */}
-          {/*insertion compteur image sur la photo avec un overlay ds le scss ? */}
+        <div className="Carrousel">
+          <Slideshow pictures={logement.pictures} />
         </div>
-        <div className="TitleLogement">{title} </div>
-        <div className="Host">{host}</div>
+        <div className="Entete">
+          <div className="GlobalLogemet">
+            <h1 className="TitreLogement">{title}</h1>
+            <div className="Location">{location}</div>{" "}
+          </div>
+          <div className="HostGlobal">
+            <div className="Host">{host.name}</div>
+            <img className="HostPicture" src={host.picture} alt="hôte" />
+          </div>
+        </div>
+        <div className="MenuAccordeon">
+          <CollapseItem title="Description" content={description} />
+          <CollapseItem title="Équipements" content={equipments} />
+        </div>
       </section>
       <Footer />
     </div>
   );
-}
+};
 
 export default FicheLogement;

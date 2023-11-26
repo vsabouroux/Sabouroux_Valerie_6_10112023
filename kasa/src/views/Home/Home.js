@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Banner from "../../components/Banner/Banner";
 import coteImage from "../../assets/cote.png";
+
 import Card from "../../components/Card/Card";
 
 import Footer from "../../components/Footer/Footer";
@@ -20,7 +21,7 @@ function Home() {
           {Logements.map(({ id, title, cover }) => (
             <Link key={id} to={`/FicheLogement/${id}`}>
               {/* Le composant Link pour créer un lien vers la page FicheLogement avec l'ID du logement */}
-              <Card title={title} picture={cover} />
+              <Card title={title} picture={cover} alt={`${Logements.title}`} />
             </Link>
           ))}
         </div>

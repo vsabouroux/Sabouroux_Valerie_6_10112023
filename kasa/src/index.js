@@ -16,7 +16,10 @@ root.render(
       <Routes>
         <Route path="Home" element={<Home logements={Logements} />} />
         <Route path="APropos" element={<APropos />} />
-        <Route path="FicheLogement/:id" element={<FicheLogement />} />
+        <Route
+          path="FicheLogement/:id"
+          element={<FicheLogement logements={Logements} />}
+        />
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </Router>

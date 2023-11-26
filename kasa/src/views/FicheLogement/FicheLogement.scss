@@ -1,0 +1,56 @@
+section {
+  //   padding: 0 50px;
+  max-width: 1440px;
+  //   margin: auto;
+
+  .Entete {
+    display: flex;
+    margin: 0 50px;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+  .GlobalLogemet {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .TitreLogement {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 36px;
+    color: #ff6060;
+    margin-bottom: 5px;
+  }
+  .Location,
+  .Host {
+    font-size: 18px;
+    color: #ff6060;
+  }
+
+  .HostGlobal {
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  .MenuAccordeon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 50px 50px;
+  }
+  .CollapseHeader {
+    width: 582px;
+    height: 52px;
+    gap: 76px;
+  }
+  .CollapseContent {
+    width: 582px;
+  }
+}
