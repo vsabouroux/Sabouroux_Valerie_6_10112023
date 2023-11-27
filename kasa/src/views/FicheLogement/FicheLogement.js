@@ -4,6 +4,7 @@ import Footer from "../../components/Footer/Footer";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import CollapseItem from "../../components/Collaps/Collaps";
 import Tag from "../../components/Tag/Tag";
+import StarRating from "../../components/Star/StarRating";
 import { useParams } from "react-router-dom";
 import "./FicheLogement.scss";
 
@@ -56,6 +57,7 @@ const FicheLogement = ({ logements }) => {
        il faut donc une cohérance */}
           <Tag tags={tags} />
         </div>
+        <StarRating rating={parseInt(logement.rating)} />
         <div className="MenuAccordeon">
           <CollapseItem title="Description" content={description} />
           <CollapseItem
