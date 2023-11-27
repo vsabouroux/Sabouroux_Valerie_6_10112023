@@ -16,9 +16,13 @@ const Slideshow = ({ pictures }) => {
 
   return (
     <div className="slideshow">
-      <button onClick={prevSlide}>&#8249;</button>
+      <button className="prev" onClick={prevSlide}>
+        &#8249;
+      </button>
       <img src={pictures[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
-      <button onClick={nextSlide}>&#8250;</button>
+      <button className="next" onClick={nextSlide}>
+        &#8250;
+      </button>
 
       <div className="counter">
         {currentSlide + 1} / {pictures.length}

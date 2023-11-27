@@ -13,4 +13,3 @@ function Footer() {
 }
 
 export default Footer;
-//Pourquoi le texte à disparu !!!

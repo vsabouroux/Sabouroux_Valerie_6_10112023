@@ -1,0 +1,30 @@
+.Tag {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+  //   flex-direction: row;
+  //   justify-content: flex-start;
+  //   //   background-color: greenyellow;
+  //   padding: 10px;
+}
+.Tag ul {
+  display: flex;
+  height: 25px;
+  /* font-size: 34px; */
+  gap: 10px;
+  align-items: center;
+}
+.TagItem {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 12px;
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  margin-top: 20px;
+  background-color: #ff6060;
+  border-radius: 10px;
+}
