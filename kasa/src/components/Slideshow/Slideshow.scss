@@ -3,7 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
+  width: 1240px;
+  margin-left: 100px;
+  // margin-right: 100px;
 
   button {
     position: absolute;
@@ -34,15 +36,15 @@
   //   right: 10px;
   // }
   img {
-    // max-width: 100%;
+    width: 1240px;
     height: 415px;
     border-radius: 25px;
+    object-fit: cover;
   }
 
   .counter {
     position: absolute;
     bottom: 10px;
-    right: center;
     font-size: 18px;
     color: white;
     font-weight: bold;

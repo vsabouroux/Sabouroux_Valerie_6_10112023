@@ -1,11 +1,13 @@
 section {
   //   padding: 0 50px;
-  max-width: 1440px;
+  max-width: 1240px;
   //   margin: auto;
 
   .Entete {
     display: flex;
     margin: 0 50px;
+    width: 1240px;
+    margin: 0 100px;
 
     align-items: center;
     justify-content: space-between;
@@ -35,7 +37,7 @@ section {
     display: flex;
     justify-content: flex-end;
     margin-top: 50px;
-    margin-right: 20px;
+    // margin-right: 20px;
 
     img {
       width: 64px;
@@ -48,7 +50,9 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0px 50px 50px;
+    //margin: 0px 50px 50px;
+    margin-left: 100px;
+    gap: 60px;
   }
   .CollapseHeader {
     width: 582px;
