@@ -3,3 +3,26 @@
 //     margin-left: 10px;
 //     color:greenyellow
 //   }
+// .star {
+//   color: filled ("#ff6060": "gray");
+// }
+// .star-global {
+//   display: flex;
+//   flex-direction: column;
+//   width: 196px;
+// }
+.star {
+  position: relative;
+  left: 1230px;
+  bottom: 50px;
+  color: #ff6060;
+  font-size: 36px;
+}
+
+.star-vide {
+  position: relative;
+  left: 1230px;
+  bottom: 50px;
+  color: #e3e3e3;
+  font-size: 36px;
+}

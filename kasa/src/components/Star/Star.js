@@ -1,8 +1,14 @@
+//"prop-types" est un package utilisé pour spécifier
+//et valider les types des propriétés (props) passées à un composant React.
+//ici on dit que la props "filled" est de type booléen et qu'il est obligatoire
 import PropTypes from "prop-types";
+import "./Star.scss";
 
 const Star = ({ filled }) => {
   return (
-    <span style={{ color: filled ? "greenyellow" : "gray" }}>&#9733;</span>
+    //<div className="star-global">
+    <span className={filled ? "star" : "star-vide"}>&#9733;</span>
+    //</div>
   );
 };
 

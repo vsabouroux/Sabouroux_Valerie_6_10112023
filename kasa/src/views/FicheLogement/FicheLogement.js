@@ -51,13 +51,18 @@ const FicheLogement = ({ logements }) => {
             <img className="HostPicture" src={host.picture} alt="hôte" />
           </div>
         </div>
-        <div>
-          {/* erreur nom de propriété dans composant Tag. 
+
+        {/* erreur nom de propriété dans composant Tag. 
        j'utilisais la propriété "content" au lieu de "tags". En effet, dans Tag.js c'est bien la props "tags" que j'utilise
        il faut donc une cohérance */}
-          <Tag tags={tags} />
-        </div>
+        <Tag tags={tags} />
+
+        {/* parseInt convertit la valeur de logement.rating en un entier (nombre entier) en utilisant la fonction parseInt . En effet,
+        dans le fichier Logement.json, rating est une chaîne de caractère : "4". 
+        On appelle le composant StarRating et on lui demande (passe une props) d'aller récupérer le nombre d'étoiles du logement et de l'afficher
+        à cet endroit*/}
         <StarRating rating={parseInt(logement.rating)} />
+
         <div className="MenuAccordeon">
           <CollapseItem title="Description" content={description} />
           <CollapseItem

@@ -7,22 +7,20 @@
 
   .overlay {
     position: absolute;
-    /*top: 10%;*/
-    /* left: 30%;*/
-    /*transform: translateY(-150%);*/
     text-align: center;
     justify-content: center;
     color: white; // Couleur du texte
     font-weight: medium;
     font-size: 28px;
-    /*width: 1240px;*/
   }
-  /*Je voudrais faire une superposition sur l'image pour la rendre plus foncée avec Overlay*/
-  img {
-    width: 1240px;
+  .banner-image {
+    width: 100%; // largeur de 100% pour remplir le conteneur parent "Banner"
     object-fit: cover;
     border-radius: 25px;
-    max-height: 223px; // Hauteur maximale
+    max-height: 223px;
     margin: 10px 0 10px 0;
+
+    // "filter" permet d'ajouter un filtre pour assombrir l'image
+    filter: brightness(70%);
   }
 }
