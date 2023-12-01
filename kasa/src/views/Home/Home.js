@@ -20,7 +20,7 @@ function Home() {
           {/*Création boucle avec map pour afficher tous les logements présents dans le fichier Logements.json*/}
           {Logements.map(({ id, title, cover }) => (
             <Link key={id} to={`/FicheLogement/${id}`}>
-              {/* Le composant Link pour créer un lien vers la page FicheLogement avec l'ID du logement */}
+              {/* Le composant Link pour créer un lien vers la page FicheLogement avec l'ID du logement lorsque l'UI clique sur un logt*/}
               <Card title={title} picture={cover} alt={`${Logements.title}`} />
             </Link>
           ))}

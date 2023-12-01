@@ -21,4 +21,3 @@ function NoMatch() {
   );
 }
 export default NoMatch;
-// <a className="back-home" href="Home.js">

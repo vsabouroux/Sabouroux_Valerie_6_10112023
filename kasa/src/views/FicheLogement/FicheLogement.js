@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Slideshow from "../../components/Slideshow/Slideshow";
@@ -20,13 +20,14 @@ const FicheLogement = ({ logements }) => {
   // console.log("Logement trouvé :", logement);
 
   if (!logement) {
-    // Rediriger vers la page NoMatch si le logement n'est pas trouvé
+    // Rediriger vers la page NoMatch si le logement n'est pas trouvé. En fait ce n'est pas faire un "lien" mais une redirection ! avec "Navigate"
     return (
-      <div>
-        <Link to="/NoMatch">
-          <p>Logement introuvable</p>
-        </Link>
-      </div>
+      // <div>
+      //   <Link to="/NoMatch">
+      //     <p>Logement introuvable</p>
+      //   </Link>
+      // </div>
+      <Navigate to="/NoMatch" />
     );
   }
 
@@ -59,7 +60,7 @@ const FicheLogement = ({ logements }) => {
 
         {/* parseInt convertit la valeur de logement.rating en un entier (nombre entier) en utilisant la fonction parseInt . En effet,
         dans le fichier Logement.json, rating est une chaîne de caractère : "4". 
-        On appelle le composant StarRating et on lui demande (passe une props) d'aller récupérer le nombre d'étoiles du logement et de l'afficher
+        On appelle le composant StarRating et on lui demande (on "passe" une props) d'aller récupérer le nombre d'étoiles du logement et de l'afficher
         à cet endroit*/}
         <StarRating rating={parseInt(logement.rating)} />
 

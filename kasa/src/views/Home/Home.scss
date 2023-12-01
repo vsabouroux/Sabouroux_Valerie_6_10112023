@@ -1,16 +1,15 @@
 main {
   // padding: 0 50px;
   max-width: 1440px;
-  //margin: auto;
-}
-
-.Appart {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #f6f6f6;
-  margin: 50px 100px 50px 100px;
-  padding-top: 50px;
-  border-radius: 25px;
-  width: 1240px;
+  margin: auto;
+  .Appart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f6f6f6;
+    margin: 50px 100px 50px 100px;
+    padding-top: 50px;
+    border-radius: 25px;
+    // width: 1240px;
+  }
 }

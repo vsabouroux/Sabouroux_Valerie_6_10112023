@@ -1,32 +1,58 @@
-.slideshow {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1240px;
-  margin-left: 100px;
-  // margin-right: 100px;
+main {
+  max-width: 1240px;
+  margin: auto;
+  .slideshow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 
-  button {
-    position: absolute;
-    /* top: 50%; */
-    /* left: 40px; */
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 100px;
-    color: greenyellow;
-    transform: translateY(-50%);
-    // padding: 10px;
+    //margin-left: 100px;
+    // margin-right: 100px;
   }
+
+  // button {
+  //   position: absolute;
+  //   /* top: 50%; */
+  //   /* left: 40px; */
+  //   width: 47px;
+  //   height: 79px;
+  //   border: none;
+  //   background-color: transparent;
+  //   cursor: pointer;
+  //   font-size: 100px;
+  //   color: greenyellow;
+  //   transform: translateY(-50%);
+  //   // padding: 10px;
+  // }
+
   .prev {
-    left: 10px;
-    bottom: 80px;
+    position: absolute;
+    left: 25px;
+    bottom: 140px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    img {
+      width: 46px;
+      height: 79px;
+    }
   }
 
   .next {
-    right: 10px;
-    bottom: 80px;
+    position: absolute;
+    right: 25px;
+    bottom: 140px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    img {
+      width: 46px;
+      height: 79px;
+    }
   }
   // button:first-child {
   //   left: 270px;
@@ -51,4 +77,12 @@
     padding: 5px;
     border-radius: 5px;
   }
+}
+
+@media screen and (width: 769px) {
+  // .counter {
+
+  //   bottom: 15px;
+
+  // }
 }

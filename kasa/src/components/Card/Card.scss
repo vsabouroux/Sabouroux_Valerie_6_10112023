@@ -1,48 +1,52 @@
 .Card {
   display: flex;
-  margin: 30px 30px 50px 28px;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.Card .TitreAppart h1 {
-  display: flex;
-  /*flex-direction: row;
-  flex-wrap: wrap;
-  /*background-color: #b51717;*/
-  border-radius: 25px;
-  /*margin-left: 100px;*/
-  font-size: 18px;
-  color: white;
-  font-weight: bold;
-
-  /*width: 100%;
-  height: 829px;*/
-}
-.Appart a {
-  // padding-left: 10px;
-  text-decoration: none;
-}
-.TitreAppart h1 {
-  margin: 0;
-  position: relative;
-  top: -50px;
-  padding-left: 10px;
-}
-.ContainerCard {
-  width: 340px;
-  height: 340px;
-  // background-color: #ff6060;
-  // background: linear-gradient(180deg, #ff6060, black);
-  // opacity: 0.8;
-  border-radius: 10px;
-}
-.TitreAppart {
-  align-items: flex-end;
-  color: white;
-}
-.CardImage {
-  width: 100%;
-  height: 340px;
+  flex-direction: column;
+  width: 33%;
   margin: auto;
-  border-radius: 10px;
+  object-fit: cover;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // overflow: hidden;
 }
+// .Card .TitreAppart h3 {
+//   display: flex;
+//   /*flex-direction: row;
+//   flex-wrap: wrap;
+//   /*background-color: #b51717;*/
+//   border-radius: 25px;
+//   /*margin-left: 100px;*/
+//   font-size: 18px;
+//   color: white;
+//   font-weight: bold;
+
+//   /*width: 100%;
+//   height: 829px;*/
+// }
+// .Appart a {
+//   // padding-left: 10px;
+//   text-decoration: none;
+// }
+// .TitreAppart h3 {
+//   margin: 0;
+//   position: relative;
+//   top: -50px;
+//   padding-left: 10px;
+// }
+// .ContainerCard {
+//   width: 340px;
+//   height: 340px;
+//   // background-color: #ff6060;
+//   // background: linear-gradient(180deg, #ff6060, black);
+//   // opacity: 0.8;
+//   border-radius: 10px;
+// }
+// .TitreAppart {
+//   align-items: flex-end;
+//   color: white;
+// }
+// .CardImage {
+//   width: 100%;
+//   height: 340px;
+//   margin: auto;
+//   border-radius: 10px;
+// }
