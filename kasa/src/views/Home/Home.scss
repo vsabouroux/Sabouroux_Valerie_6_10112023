@@ -1,15 +1,28 @@
-main {
-  // padding: 0 50px;
+.main {
   max-width: 1440px;
   margin: auto;
-  .Appart {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #f6f6f6;
-    margin: 50px 100px 50px 100px;
-    padding-top: 50px;
-    border-radius: 25px;
-    // width: 1240px;
+}
+section.Appart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.Card {
+  //position: relative;
+  width: 340px;
+  height: 340px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  section.Appart {
+    justify-content: center; // Centrez les cartes si la largeur de l'écran est inférieure à 1024px
   }
 }

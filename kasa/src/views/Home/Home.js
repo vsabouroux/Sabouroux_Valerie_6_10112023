@@ -16,7 +16,7 @@ function Home() {
       <Header />
       <main>
         <Banner img={coteImage} texte="Chez vous, partout et ailleurs" />
-        <div className="Appart">
+        <section className="Appart">
           {/*Création boucle avec map pour afficher tous les logements présents dans le fichier Logements.json*/}
           {Logements.map(({ id, title, cover }) => (
             <Link key={id} to={`/FicheLogement/${id}`}>
@@ -24,7 +24,7 @@ function Home() {
               <Card title={title} picture={cover} alt={`${Logements.title}`} />
             </Link>
           ))}
-        </div>
+        </section>
       </main>
       <Footer />
     </div>

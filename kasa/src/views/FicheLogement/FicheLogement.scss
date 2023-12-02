@@ -6,7 +6,7 @@ section {
   .Entete {
     display: flex;
     margin: 0 50px;
-    width: 1240px;
+    width: 100%;
     margin: 0 100px;
 
     align-items: center;
@@ -19,7 +19,8 @@ section {
   }
   .TitreLogement {
     display: flex;
-    justify-content: flex-start;
+    width: 635px;
+
     font-size: 36px;
     color: #ff6060;
     margin-bottom: 5px;
@@ -37,6 +38,7 @@ section {
     display: flex;
     justify-content: flex-end;
     margin-top: 50px;
+    width: 100%;
     // margin-right: 20px;
 
     img {
@@ -49,17 +51,18 @@ section {
   .MenuAccordeon {
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-between;
     //margin: 0px 50px 50px;
     margin-left: 100px;
     gap: 60px;
   }
   .CollapseHeader {
-    width: 582px;
+    max-width: 582px;
     height: 52px;
     gap: 76px;
   }
   .CollapseContent {
-    width: 582px;
+    max-width: 582px;
   }
 }
