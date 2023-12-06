@@ -18,3 +18,17 @@ footer {
     height: 100px;
   }
 }
+@media screen and (max-width: 376px) {
+  footer p {
+    font-size: 12px;
+    width: 100px;
+    margin: auto;
+  }
+  footer img.kasa-logo-blanc {
+    display: flex;
+    justify-content: center;
+    width: 122px;
+    height: 39px;
+    margin-bottom: 15px;
+  }
+}

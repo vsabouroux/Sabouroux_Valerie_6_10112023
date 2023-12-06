@@ -1,18 +1,19 @@
 section {
   //   padding: 0 50px;
-  max-width: 1240px;
-  //   margin: auto;
-
+  max-width: 1440px;
+  margin: auto;
+  .Carrousel {
+    width: 100%; // Pour occuper la largeur disponible
+  }
   .Entete {
     display: flex;
-    margin: 0 50px;
-    width: 100%;
+    // margin: 0 50px;
+    width: 1240px;
     margin: 0 100px;
-
     align-items: center;
     justify-content: space-between;
   }
-  .GlobalLogemet {
+  .GlobalLogement {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -20,7 +21,6 @@ section {
   .TitreLogement {
     display: flex;
     width: 635px;
-
     font-size: 36px;
     color: #ff6060;
     margin-bottom: 5px;
@@ -38,7 +38,7 @@ section {
     display: flex;
     justify-content: flex-end;
     margin-top: 50px;
-    width: 100%;
+    // width: 100%;
     // margin-right: 20px;
 
     img {
@@ -51,7 +51,7 @@ section {
   .MenuAccordeon {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    max-width: 1240px;
     justify-content: space-between;
     //margin: 0px 50px 50px;
     margin-left: 100px;
@@ -64,5 +64,44 @@ section {
   }
   .CollapseContent {
     max-width: 582px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .Carrousel {
+    width: 335px;
+    height: 255px;
+  }
+  .Entete {
+    flex-direction: column;
+    align-items: center;
+    // text-align: center;
+
+    .GlobalLogement {
+      margin-bottom: 15px;
+    }
+
+    .HostGlobal {
+      margin-top: 15px;
+
+      .Host {
+        margin-bottom: 5px;
+      }
+
+      .HostPicture {
+        width: 100%; // Pour occuper la largeur disponible
+        max-width: 150px;
+        border-radius: 10px;
+      }
+    }
+  }
+  .TitreLogement {
+    font-size: 24px;
+  }
+
+  .MenuAccordeon {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0; // Ajout pour réinitialiser la marge
+    gap: 15px;
   }
 }

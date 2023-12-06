@@ -1,5 +1,5 @@
 main {
-  max-width: 1240px;
+  max-width: 1440px;
   margin: auto;
 
   .slideshow {
@@ -56,10 +56,18 @@ main {
   }
 }
 
-@media screen and (width: 769px) {
-  // .counter {
-
-  //   bottom: 15px;
-
-  // }
+@media screen and (max-width: 376px) {
+  .slideshow {
+    width: 335px;
+    height: 255px;
+    margin: auto;
+  }
+  .prev img,
+  .next img {
+    width: 11.67px;
+    height: 19.8px;
+  }
+  .counter {
+    display: none;
+  }
 }

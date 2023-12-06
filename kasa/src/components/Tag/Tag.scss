@@ -20,7 +20,6 @@
   width: 150px;
   align-items: center;
   justify-content: center;
-
   padding: 8px 12px;
   font-size: 14px;
   color: white;
@@ -28,4 +27,11 @@
   margin-top: 20px;
   background-color: #ff6060;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 376px) {
+  .TagItem {
+    font-size: 10px;
+    width: 115px;
+  }
 }

@@ -6,6 +6,7 @@ import CollapseItem from "../../components/Collaps/Collaps";
 import Tag from "../../components/Tag/Tag";
 import StarRating from "../../components/Star/StarRating";
 import { useParams } from "react-router-dom";
+
 import "./FicheLogement.scss";
 
 // useParmas = hook utilisé pour extraire les paramètres de l'URL dans un composant fonctionnel. Ici on veut récupérer que les "pictures" du logement
@@ -43,7 +44,7 @@ const FicheLogement = ({ logements }) => {
           <Slideshow pictures={logement.pictures} />
         </div>
         <div className="Entete">
-          <div className="GlobalLogemet">
+          <div className="GlobalLogement">
             <h1 className="TitreLogement">{title}</h1>
             <div className="Location">{location}</div>{" "}
           </div>

@@ -30,3 +30,15 @@ h2 {
   width: 24px;
   height: 14px;
 }
+@media screen and (max-width: 376px) {
+  .CollapsHeader {
+    width: 335px;
+  }
+  .CollapseItem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

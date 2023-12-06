@@ -2,3 +2,9 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+@media screen and (max-width: 375px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+}
