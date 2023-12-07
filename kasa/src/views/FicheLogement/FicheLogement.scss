@@ -2,6 +2,7 @@ section {
   //   padding: 0 50px;
   max-width: 1440px;
   margin: auto;
+
   .Carrousel {
     width: 100%; // Pour occuper la largeur disponible
   }
@@ -70,6 +71,7 @@ section {
   .Carrousel {
     width: 335px;
     height: 255px;
+    margin: auto;
   }
   .Entete {
     flex-direction: column;
@@ -94,6 +96,7 @@ section {
       }
     }
   }
+
   .TitreLogement {
     font-size: 24px;
   }
@@ -103,5 +106,40 @@ section {
     align-items: center;
     margin-left: 0; // Ajout pour réinitialiser la marge
     gap: 15px;
+  }
+  .CollapsHeader {
+    width: 335px;
+  }
+
+  .CollapseItem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .slideshow {
+    width: 335px;
+    height: 255px;
+    margin: auto;
+  }
+
+  .prev img,
+  .next img {
+    width: 11.67px;
+    height: 19.8px;
+  }
+
+  .counter {
+    display: none;
+  }
+
+  .Tag {
+    margin-left: 0;
+  }
+
+  .TagItem {
+    font-size: 10px;
+    width: 115px;
   }
 }

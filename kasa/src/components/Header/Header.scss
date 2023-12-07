@@ -8,13 +8,13 @@
   // margin-bottom: 50px;
   // margin-left: 100px;
   // margin-right: 100px;
-  margin: 45px 220px 50px 220px;
+  margin: 45px 100px 50px 100px;
   .kasa-logo {
     // display: flex;
     // justify-content: flex-start;
     // flex-direction: row;
     // align-items: center;
-    width: auto;
+    width: 210px;
     height: auto;
     //modif largeur anciennement width : 210px
 
@@ -25,18 +25,19 @@
 
   nav {
     ul {
-      // modifs
       display: flex;
-      gap: 57px;
+      width: 309px;
+      gap: 15%;
+      justify-content: flex-end;
       list-style-type: none;
-      margin: 0;
-      padding: 0;
+      font-size: 24px;
+      // margin: 0;
+      // padding: 0;
       // display: flex;
       // justify-content: space-between;
       // padding-right: 40px;
       // padding-top: 70px;
       // gap: 57px;
-      font-size: 24px;
       // font-weight: 500;
       // list-style-type: none;
       // margin-right: 100px;
@@ -56,22 +57,28 @@
 }
 @media screen and (max-width: 376px) {
   .kasa-header {
-    flex-direction: column; // Empile les éléments en colonne
-    align-items: center; // Centre les éléments
-    margin: 0; // Supprime les marges latérales
+    flex-direction: row;
+    //
+    width: 100%;
+    // align-items: center; // Centre les éléments
+    // margin: 0; // Supprime les marges latérales
     padding: 15px;
   }
-  .kasa-logo {
+  img.kasa-logo {
     width: 145px;
-    height: 47px;
-    margin-bottom: 15px;
+    // // width: 50%;
+    // height: 47px;
+    // // height: auto;
+    // margin-bottom: 15px;
+    margin-bottom: 0;
   }
   nav {
     ul {
       display: flex;
       flex-direction: row;
-      font-size: 12px;
-      justify-content: center;
+      // width: 190px;
+      // font-size: 12px;
+      // justify-content: center;
       gap: 15px;
     }
     li {
