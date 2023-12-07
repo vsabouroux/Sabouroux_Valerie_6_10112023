@@ -1,5 +1,4 @@
 .CollapseItem {
-  /*border: 1px solid #ddd;*/
   margin-bottom: 30px;
 }
 
@@ -10,7 +9,7 @@
   padding: 10px;
   cursor: pointer;
   background-color: #ff6060;
-  width: 1023px;
+  max-width: 1023px;
   height: 54px;
   border-radius: 10px;
 }
