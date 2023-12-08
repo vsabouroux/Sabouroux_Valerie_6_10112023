@@ -9,7 +9,7 @@ section {
   .Entete {
     display: flex;
     // margin: 0 50px;
-    width: 1240px;
+    // width: 1240px;
     margin: 0 100px;
     align-items: center;
     justify-content: space-between;
@@ -59,9 +59,9 @@ section {
     gap: 60px;
   }
   .CollapseHeader {
-    max-width: 582px;
-    height: 52px;
-    gap: 76px;
+    width: 582px;
+    // height: 52px;
+    // gap: 76px;
   }
   .CollapseContent {
     max-width: 582px;

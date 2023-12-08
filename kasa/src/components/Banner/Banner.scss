@@ -2,9 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1240px;
-  border-radius: 25px;
-  margin: auto;
+  // border-radius: 25px;
+  margin: 45px 100px 50px 100px;
 
   .overlay {
     position: absolute;
@@ -16,31 +15,41 @@
   }
   .banner-image {
     width: 100%; // largeur de 100% pour remplir le conteneur parent "Banner"
+    height: 223px;
     object-fit: cover;
     border-radius: 25px;
-    max-height: 223px;
-    margin: 10px 0 10px 0;
 
     // "filter" permet d'ajouter un filtre pour assombrir l'image
     filter: brightness(70%);
   }
 }
 @media screen and (max-width: 376px) {
-  .banner-image {
-    width: 335px;
-    height: 111px;
-    // background-size: cover;
-    // background-position: right;
-  }
-  .overlay,
-  h1 {
-    font-size: 24px;
-    width: 217px;
-  }
-  h1 {
-    position: absolute;
-    text-align: left;
-    left: -50px;
-    bottom: -50px;
+  .Banner {
+    margin: 20px;
+    // width: 335px;
+
+    .banner-image {
+      width: 335px;
+      height: 111px;
+      border-radius: 10px;
+      // margin: 0 20px;
+      // background-size: cover;
+      // background-position: 25% 75%;
+    }
+    .overlay,
+    h1 {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+      margin-left: -20px;
+      font-size: 24px;
+      width: 217px;
+    }
+    // h1 {
+    //   position: absolute;
+    //   text-align: left;
+    //   left: -50px;
+    //   bottom: -50px;
+    // }
   }
 }

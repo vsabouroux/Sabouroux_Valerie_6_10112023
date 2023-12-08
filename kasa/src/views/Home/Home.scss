@@ -1,31 +1,25 @@
-.main {
-  max-width: 1440px;
-  margin: auto;
-}
 section.Appart {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1240px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 50px;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
   background-color: #f6f6f6;
   border-radius: 25px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-.Card {
-  display: flex;
-  justify-content: space-around;
-  width: 340px;
-  height: 340px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  padding: 56px;
+  margin: 100px;
 }
 
 @media screen and (max-width: 376px) {
   section.Appart {
+    grid-template-columns: 1fr;
     justify-content: center; // Centre les cartes si la largeur de l'écran est inférieure à 1024px
     background-color: transparent;
+    // padding-top: 27px;
+    // padding: 20px;
+    margin: 0 20px 0 20px;
+    gap: 0;
   }
   .Card {
     width: 335px;

@@ -2,51 +2,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 15px; */
-  /* width: 100%; */
-  // margin-top: 45px;
-  // margin-bottom: 50px;
-  // margin-left: 100px;
-  // margin-right: 100px;
   margin: 45px 100px 50px 100px;
+
   .kasa-logo {
     display: flex;
-    // justify-content: flex-start;
-    // flex-direction: row;
-    align-items: flex-starts;
+    align-items: flex-start;
     width: 210px;
     height: auto;
-    //modif largeur anciennement width : 210px
-
-    // margin: 45px 100px 45px 100px;
-    // padding-top: 30px;
-    // padding-bottom: 30px;
   }
 
   nav {
     ul {
       display: flex;
-      width: 309px;
-      gap: 15%;
+      // width: 309px;
+      gap: 57px;
       justify-content: flex-end;
       list-style-type: none;
       font-size: 24px;
-      // margin: 0;
-      // padding: 0;
-      // display: flex;
-      // justify-content: space-between;
-      // padding-right: 40px;
-      // padding-top: 70px;
-      // gap: 57px;
-      // font-weight: 500;
-      // list-style-type: none;
-      // margin-right: 100px;
+      font-weight: normal;
+      padding-right: 13px;
     }
     li {
       align-items: center;
     }
     .nav-link.active {
       text-decoration: underline;
+      line-height: 34.22px;
       color: #ff6060;
     }
     .nav-link {
@@ -58,31 +39,30 @@
 @media screen and (max-width: 376px) {
   .kasa-header {
     flex-direction: row;
-    //
-    width: 100%;
-    // align-items: center; // Centre les éléments
-    // margin: 0; // Supprime les marges latérales
-    padding: 15px;
-  }
-  img.kasa-logo {
-    width: 145px;
-    // // width: 50%;
-    // height: 47px;
-    // // height: auto;
-    // margin-bottom: 15px;
-    margin-bottom: 0;
-  }
-  nav {
-    ul {
-      display: flex;
-      flex-direction: row;
-      // width: 190px;
-      // font-size: 12px;
-      // justify-content: center;
-      gap: 15px;
+    // margin: 30px 20px 27px 20px;
+    // width: 335px;
+
+    .kasa-logo {
+      width: 145px;
+      // // width: 50%;
+      // height: 47px;
+      // // height: auto;
+      // margin-bottom: 15px;
+      // margin-bottom: 0;
     }
-    li {
-      align-items: center; // Centre verticalement chaque lien
+    nav {
+      ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        font-size: 12px;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 26px;
+      }
+      li {
+        align-items: center; // Centre verticalement chaque lien
+      }
     }
   }
 }

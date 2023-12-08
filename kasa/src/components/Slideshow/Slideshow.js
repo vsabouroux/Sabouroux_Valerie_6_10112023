@@ -20,32 +20,30 @@ const Slideshow = ({ pictures }) => {
   //
   const hideButtons = pictures.length === 1;
   return (
-    <main>
-      <div className="slideshow">
-        {!hideButtons && (
-          <>
-            <button className="prev" onClick={prevSlide}>
-              <img src={fleche_gauche} alt="fleche_gauche" />
-              {/* &#8249; */}
-            </button>
-            <button className="next" onClick={nextSlide}>
-              <img src={fleche_droite} alt="fleche_droite" />
-            </button>
-            {/* &#8250; */}
-          </>
-        )}
-        <img
-          key={currentSlide}
-          src={pictures[currentSlide]}
-          alt={`Slide ${currentSlide + 1}`}
-        />
-        {!hideButtons && (
-          <div className="counter">
-            {currentSlide + 1} / {pictures.length}
-          </div>
-        )}
-      </div>
-    </main>
+    <div className="slideshow">
+      {!hideButtons && (
+        <>
+          <button className="prev" onClick={prevSlide}>
+            <img src={fleche_gauche} alt="fleche_gauche" />
+            {/* &#8249; */}
+          </button>
+          <button className="next" onClick={nextSlide}>
+            <img src={fleche_droite} alt="fleche_droite" />
+          </button>
+          {/* &#8250; */}
+        </>
+      )}
+      <img
+        key={currentSlide}
+        src={pictures[currentSlide]}
+        alt={`Slide ${currentSlide + 1}`}
+      />
+      {!hideButtons && (
+        <div className="counter">
+          {currentSlide + 1} / {pictures.length}
+        </div>
+      )}
+    </div>
   );
 };
 

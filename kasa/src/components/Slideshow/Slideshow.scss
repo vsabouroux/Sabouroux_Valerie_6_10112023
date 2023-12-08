@@ -1,15 +1,10 @@
-main {
-  max-width: 1440px;
-  margin: auto;
-
-  .slideshow {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1240px;
-    margin-left: 100px;
-  }
+.slideshow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1240px;
+  margin-left: 100px;
   .prev {
     position: absolute;
     left: 25px;
@@ -61,13 +56,13 @@ main {
     width: 335px;
     height: 255px;
     margin: auto;
-  }
-  .prev img,
-  .next img {
-    width: 11.67px;
-    height: 19.8px;
-  }
-  .counter {
-    display: none;
+    .prev img,
+    .next img {
+      width: 11.67px;
+      height: 19.8px;
+    }
+    .counter {
+      display: none;
+    }
   }
 }
