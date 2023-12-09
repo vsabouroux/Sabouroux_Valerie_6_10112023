@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom";
 
 import "./FicheLogement.scss";
 
-// useParmas = hook utilisé pour extraire les paramètres de l'URL dans un composant fonctionnel. Ici on veut récupérer que les "pictures" du logement
+// useParams = hook utilisé pour extraire les paramètres de l'URL dans un composant fonctionnel. Ici on veut récupérer que les "pictures" du logement
 // et on se repèrera avec l'id du logement
 
 const FicheLogement = ({ logements }) => {
@@ -17,7 +17,6 @@ const FicheLogement = ({ logements }) => {
   const { id } = useParams();
   // console.log("ID du logement :", id);
   const logement = logements.find((logement) => logement.id === id);
-  // console.log("Logements :", logements);
   // console.log("Logement trouvé :", logement);
 
   if (!logement) {
@@ -46,19 +45,17 @@ const FicheLogement = ({ logements }) => {
           <div className="Entete">
             <div className="GlobalLogement">
               <h1 className="TitreLogement">{title}</h1>
-              <div className="Location">{location}</div>{" "}
+              <div className="Location">{location}</div>
             </div>
             <div className="HostGlobal">
               <div className="Host">{host.name}</div>
               <img className="HostPicture" src={host.picture} alt="hôte" />
             </div>
           </div>
-
           {/* erreur nom de propriété dans composant Tag. 
        j'utilisais la propriété "content" au lieu de "tags". En effet, dans Tag.js c'est bien la props "tags" que j'utilise
        il faut donc une cohérance */}
           <Tag tags={tags} />
-
           {/* parseInt convertit la valeur de logement.rating en un entier (nombre entier) en utilisant la fonction parseInt . En effet,
         dans le fichier Logement.json, rating est une chaîne de caractère : "4". 
         On appelle le composant StarRating et on lui demande (on "passe" une props) d'aller récupérer le nombre d'étoiles du logement et de l'afficher

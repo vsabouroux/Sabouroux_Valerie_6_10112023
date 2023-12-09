@@ -8,16 +8,20 @@ section {
   }
   .Entete {
     display: flex;
+    flex-direction: row;
+    gap: 440px;
     // margin: 0 50px;
     // width: 1240px;
-    margin: 0 100px;
-    align-items: center;
-    justify-content: space-between;
+    // margin: 0 100px;
+    // align-items: center;
+    // justify-content: space-around;
   }
   .GlobalLogement {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 635px;
+    margin-left: 100px;
   }
   .TitreLogement {
     display: flex;
@@ -39,7 +43,7 @@ section {
     display: flex;
     justify-content: flex-end;
     margin-top: 50px;
-    // width: 100%;
+    width: 164px;
     // margin-right: 20px;
 
     img {
@@ -52,27 +56,29 @@ section {
   .MenuAccordeon {
     display: flex;
     flex-direction: row;
-    max-width: 1240px;
+    // max-width: 1240px;
+    // width: 100%;
     justify-content: space-between;
+    // gap: 0px;
     //margin: 0px 50px 50px;
+    // margin-left: 100px;
     margin-left: 100px;
-    gap: 60px;
   }
   .CollapseHeader {
-    width: 582px;
+    width: 552px;
     // height: 52px;
     // gap: 76px;
   }
   .CollapseContent {
-    max-width: 582px;
+    max-width: 552px;
   }
 }
 @media screen and (max-width: 376px) {
-  .Carrousel {
-    width: 335px;
-    height: 255px;
-    margin: auto;
-  }
+  // .Carrousel {
+  //   width: 335px;
+  //   height: 255px;
+  //   margin: auto;
+  // }
   .Entete {
     flex-direction: column;
     align-items: center;
@@ -101,23 +107,6 @@ section {
     font-size: 24px;
   }
 
-  .MenuAccordeon {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0; // Ajout pour réinitialiser la marge
-    gap: 15px;
-  }
-  .CollapsHeader {
-    width: 335px;
-  }
-
-  .CollapseItem {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-between;
-  }
-
   .slideshow {
     width: 335px;
     height: 255px;
@@ -142,4 +131,20 @@ section {
     font-size: 10px;
     width: 115px;
   }
+  .MenuAccordeon {
+    flex-direction: column;
+    align-items: center;
+    // margin-left: 0; // Ajout pour réinitialiser la marge
+    gap: 15px;
+  }
+  .CollapsHeader {
+    width: 325px;
+  }
+
+  // .CollapseItem {
+  // //   display: flex;
+  // //   flex-direction: column;
+  // //   width: 100%;
+  // //   justify-content: space-between;
+  // // }
 }

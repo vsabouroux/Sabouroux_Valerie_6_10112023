@@ -8,7 +8,7 @@ const StarRating = ({ rating }) => {
   const filledStars = Array.from({ length: 5 }, (_, index) => index < rating);
 
   return (
-    <div>
+    <div className="star-global">
       {/* la méthode map permet de parcourir le tableau et de colorer le bon nb d'étoiles */}
       {filledStars.map((filled, index) => (
         <Star key={index} filled={filled} />

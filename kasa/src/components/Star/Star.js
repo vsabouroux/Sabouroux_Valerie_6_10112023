@@ -6,9 +6,9 @@ import "./Star.scss";
 
 const Star = ({ filled }) => {
   return (
-    //<div className="star-global">
+    // <div className="star-global">
     <span className={filled ? "star" : "star-vide"}>&#9733;</span>
-    //</div>
+    // </div>
   );
 };
 

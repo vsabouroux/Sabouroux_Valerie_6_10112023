@@ -1,5 +1,9 @@
 .CollapseItem {
-  max-width: 1023px;
+  display: flex;
+  flex-direction: column;
+  width: 1023px;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 30px;
 }
 
@@ -9,14 +13,14 @@
   align-items: center;
   padding: 10px;
   background-color: #ff6060;
-  max-width: 1023px;
+  // max-width: 1023px;
   height: 54px;
   border-radius: 10px;
   cursor: pointer;
 }
 .CollapseContent {
   padding: 20px 0px 20px 20px;
-  max-width: 1023px;
+  // max-width: 1023px;
   background-color: #f6f6f6;
   color: #ff6060;
   border-radius: 5px;
@@ -31,14 +35,21 @@ h2 {
   height: 14px;
 }
 @media screen and (max-width: 376px) {
-  .CollapsHeader {
-    width: 335px;
-  }
   .CollapseItem {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    // width: 100%;
+    // justify-content: space-between;
+    width: 335px;
+    height: 30px;
+    // margin: 20px;
+  }
+  .CollapsHeader {
+    padding: 20px;
+  }
+  h2 {
+    font-size: 13px;
+    font-weight: 500px;
   }
 }

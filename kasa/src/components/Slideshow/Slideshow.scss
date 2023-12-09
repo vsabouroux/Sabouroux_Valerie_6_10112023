@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1240px;
+  max-width: 1240px;
   margin-left: 100px;
   .prev {
     position: absolute;
@@ -54,7 +54,7 @@
 @media screen and (max-width: 376px) {
   .slideshow {
     width: 335px;
-    height: 255px;
+    // height: 255px;
     margin: auto;
     .prev img,
     .next img {
