@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Montserrat:wght@200&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 .main {
   max-width: 1440px;
@@ -8,8 +9,8 @@ body {
 }
 @media screen and (max-width: 376px) {
   body {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     margin: 0;
   }
 }
