@@ -7,7 +7,7 @@ function NoMatch() {
   return (
     <div>
       <Header />
-      <div className="element-no-found">
+      <section className="element-no-found">
         <div className="NoMatch">404</div>
         <div className="page-inconnue">
           {"  Oups ! La page que vous demandez n'existe pas. "}
@@ -15,7 +15,7 @@ function NoMatch() {
         <NavLink className="back-home" to="/Home">
           Retourner sur la page d'accueil
         </NavLink>
-      </div>
+      </section>
       <Footer />
     </div>
   );
