@@ -6,43 +6,81 @@ section {
   .Carrousel {
     width: 100%; // Pour occuper la largeur disponible
   }
-  .Entete {
+  .Entete-HostGlobal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 450px;
+
+    .Entete {
+      display: flex;
+      flex-direction: row;
+      gap: 440px;
+      // margin: 0 50px;
+      // width: 1240px;
+      // margin: 0 100px;
+      // align-items: center;
+      // justify-content: space-around;
+    }
+    .GlobalLogement {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 635px;
+      margin-left: 100px;
+    }
+    .TitreLogement {
+      // display: flex;
+      width: 635px;
+      font-size: 36px;
+      color: #ff6060;
+      margin-bottom: 5px;
+    }
+    .Location {
+      font-size: 18px;
+      color: #ff6060;
+    }
+  }
+  // .Entete {
+  //   display: flex;
+  //   flex-direction: row;
+  //   gap: 440px;
+  //   // margin: 0 50px;
+  //   // width: 1240px;
+  //   // margin: 0 100px;
+  //   // align-items: center;
+  //   // justify-content: space-around;
+  // }
+  // .GlobalLogement {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: flex-start;
+  //   width: 635px;
+  //   margin-left: 100px;
+  // }
+  // .TitreLogement {
+  //   // display: flex;
+  //   width: 635px;
+  //   font-size: 36px;
+  //   color: #ff6060;
+  //   margin-bottom: 5px;
+  // }
+  // .Location,
+  .HostSemiGlobal {
     display: flex;
     flex-direction: row;
-    gap: 440px;
-    // margin: 0 50px;
-    // width: 1240px;
-    // margin: 0 100px;
-    // align-items: center;
-    // justify-content: space-around;
   }
-  .GlobalLogement {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 635px;
-    margin-left: 100px;
-  }
-  .TitreLogement {
-    display: flex;
-    width: 635px;
-    font-size: 36px;
-    color: #ff6060;
-    margin-bottom: 5px;
-  }
-  .Location,
   .Host {
     font-size: 18px;
     color: #ff6060;
-  }
-  .Host {
     width: 83px;
     padding-top: 10px;
   }
   .HostGlobal {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 50px;
+    flex-direction: column;
+    // justify-content: flex-end;
+    // margin-top: 50px;
     width: 164px;
     // margin-right: 20px;
 
@@ -62,7 +100,8 @@ section {
     // gap: 0px;
     //margin: 0px 50px 50px;
     // margin-left: 100px;
-    margin-left: 100px;
+    margin: 30px 100px 50px;
+    gap: 76px;
   }
   .CollapseHeader {
     width: 552px;
@@ -74,11 +113,13 @@ section {
   }
 }
 @media screen and (max-width: 376px) {
-  // .Carrousel {
-  //   width: 335px;
-  //   height: 255px;
-  //   margin: auto;
-  // }
+  .Carrousel {
+    height: 255px;
+  }
+  .Entete-HostGlobal {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   .Entete {
     flex-direction: column;
     align-items: center;
@@ -108,8 +149,8 @@ section {
   }
 
   .slideshow {
-    width: 335px;
-    height: 255px;
+    // width: 335px;
+    // height: 255px;
     margin: auto;
   }
 

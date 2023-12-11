@@ -42,26 +42,31 @@ const FicheLogement = ({ logements }) => {
           <div className="Carrousel">
             <Slideshow pictures={logement.pictures} />
           </div>
-          <div className="Entete">
-            <div className="GlobalLogement">
-              <h1 className="TitreLogement">{title}</h1>
-              <div className="Location">{location}</div>
-            </div>
-            <div className="HostGlobal">
-              <div className="Host">{host.name}</div>
-              <img className="HostPicture" src={host.picture} alt="hôte" />
-            </div>
-          </div>
-          {/* erreur nom de propriété dans composant Tag. 
+          <div className="Entete-HostGlobal">
+            <div className="Entete">
+              <div className="GlobalLogement">
+                <h1 className="TitreLogement">{title}</h1>
+                <div className="Location">{location}</div>
+                {/* erreur nom de propriété dans composant Tag. 
        j'utilisais la propriété "content" au lieu de "tags". En effet, dans Tag.js c'est bien la props "tags" que j'utilise
        il faut donc une cohérance */}
-          <Tag tags={tags} />
-          {/* parseInt convertit la valeur de logement.rating en un entier (nombre entier) en utilisant la fonction parseInt . En effet,
+                <Tag tags={tags} />
+              </div>
+            </div>
+
+            {/* parseInt convertit la valeur de logement.rating en un entier (nombre entier) en utilisant la fonction parseInt . En effet,
         dans le fichier Logement.json, rating est une chaîne de caractère : "4". 
         On appelle le composant StarRating et on lui demande (on "passe" une props) d'aller récupérer le nombre d'étoiles du logement et de l'afficher
         à cet endroit*/}
-          <StarRating rating={parseInt(logement.rating)} />
 
+            <div className="HostGlobal">
+              <div className="HostSemiGlobal">
+                <div className="Host">{host.name}</div>
+                <img className="HostPicture" src={host.picture} alt="hôte" />
+              </div>
+              <StarRating rating={parseInt(logement.rating)} />
+            </div>
+          </div>
           <div className="MenuAccordeon">
             <CollapseItem title="Description" content={description} />
             <CollapseItem

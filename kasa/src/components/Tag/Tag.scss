@@ -1,7 +1,7 @@
 .Tag {
   display: flex;
   justify-content: flex-start;
-  margin-left: 60px;
+  // margin-left: 60px;
   width: 365px;
   //   flex-direction: row;
   //   justify-content: flex-start;
@@ -14,6 +14,7 @@
   /* font-size: 34px; */
   gap: 10px;
   align-items: center;
+  padding: 0;
 }
 .TagItem {
   display: flex;
