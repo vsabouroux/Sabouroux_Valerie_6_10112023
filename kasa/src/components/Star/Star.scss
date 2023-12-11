@@ -25,7 +25,11 @@
 }
 
 @media screen and (max-width: 376px) {
-  .star .star-vide {
+  .star {
     left: 20px;
+    font-size: 18px;
+  }
+  .star-vide {
+    font-size: 18px;
   }
 }

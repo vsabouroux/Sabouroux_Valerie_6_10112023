@@ -4,12 +4,13 @@
   align-items: center;
   justify-content: center;
   max-width: 1240px;
-  height: 415px;
+  // height: 415px;
+  height: auto;
   margin-left: 100px;
 
   img {
     width: 100%;
-    height: auto;
+    height: 415px;
     border-radius: 25px;
     object-fit: cover;
   }
@@ -62,8 +63,22 @@
       width: 11.67px;
       height: 19.8px;
     }
+    img {
+      width: 335px;
+      height: 255px;
+    }
     .counter {
       display: none;
+    }
+    .next,
+    .prev {
+      bottom: 100px;
+    }
+    .next {
+      right: 2px;
+    }
+    .prev {
+      left: 2px;
     }
   }
 }

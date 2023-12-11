@@ -16,11 +16,6 @@ section {
       display: flex;
       flex-direction: row;
       gap: 440px;
-      // margin: 0 50px;
-      // width: 1240px;
-      // margin: 0 100px;
-      // align-items: center;
-      // justify-content: space-around;
     }
     .GlobalLogement {
       display: flex;
@@ -41,31 +36,7 @@ section {
       color: #ff6060;
     }
   }
-  // .Entete {
-  //   display: flex;
-  //   flex-direction: row;
-  //   gap: 440px;
-  //   // margin: 0 50px;
-  //   // width: 1240px;
-  //   // margin: 0 100px;
-  //   // align-items: center;
-  //   // justify-content: space-around;
-  // }
-  // .GlobalLogement {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: flex-start;
-  //   width: 635px;
-  //   margin-left: 100px;
-  // }
-  // .TitreLogement {
-  //   // display: flex;
-  //   width: 635px;
-  //   font-size: 36px;
-  //   color: #ff6060;
-  //   margin-bottom: 5px;
-  // }
-  // .Location,
+
   .HostSemiGlobal {
     display: flex;
     flex-direction: row;
@@ -105,86 +76,96 @@ section {
   }
   .CollapseHeader {
     width: 552px;
-    // height: 52px;
-    // gap: 76px;
+    height: 50px;
+    gap: 76px;
   }
   .CollapseContent {
     max-width: 552px;
   }
 }
-@media screen and (max-width: 376px) {
-  .Carrousel {
-    height: 255px;
-  }
-  .Entete-HostGlobal {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .Entete {
-    flex-direction: column;
-    align-items: center;
-    // text-align: center;
 
-    .GlobalLogement {
-      margin-bottom: 15px;
+// Responsive mobile : breakpoint à 375px
+@media screen and (max-width: 376px) {
+  section {
+    .Carrousel {
+      height: 255px;
+    }
+    .Entete-HostGlobal .GlobalLogement {
+      margin-left: 20px;
+      height: 100px;
+    }
+    .Entete-HostGlobal .TitreLogement {
+      font-size: 18px;
+      width: 335px;
+    }
+    .Entete-HostGlobal .Location {
+      font-size: 14px;
     }
 
+    .Entete-HostGlobal {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .Entete {
+      flex-direction: column;
+      // align-items: center;
+      width: 335px;
+      // text-align: center;
+
+      .GlobalLogement {
+        margin-bottom: 15px;
+      }
+      // .Host {
+      //   margin-bottom: 5px;
+      // }
+    }
     .HostGlobal {
-      margin-top: 15px;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      width: 335px;
+      margin: 20px 0 20px 20px;
 
       .Host {
-        margin-bottom: 5px;
+        font-size: 12px;
       }
-
-      .HostPicture {
-        width: 100%; // Pour occuper la largeur disponible
-        max-width: 150px;
-        border-radius: 10px;
+      img {
+        width: 32px;
+        height: 32px;
       }
     }
   }
+}
 
-  .TitreLogement {
-    font-size: 24px;
-  }
+// section .Host {
+//   display: flex;
+//   flex-direction: row-reverse;
+// }
+.TitreLogement {
+  font-size: 24px;
+}
 
-  .slideshow {
-    // width: 335px;
-    // height: 255px;
-    margin: auto;
-  }
+.slideshow {
+  // width: 335px;
+  // height: 255px;
+  margin: auto;
+}
 
-  .prev img,
-  .next img {
-    width: 11.67px;
-    height: 19.8px;
-  }
+.prev img,
+.next img {
+  width: 11.67px;
+  height: 19.8px;
+}
 
-  .counter {
-    display: none;
-  }
+.counter {
+  display: none;
+}
 
-  .Tag {
-    margin-left: 0;
-  }
-
-  .TagItem {
-    font-size: 10px;
-    width: 115px;
-  }
-  .MenuAccordeon {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0 27px;
-  }
-  .CollapsHeader {
-    width: 325px;
-  }
-
-  // .CollapseItem {
-  // //   display: flex;
-  // //   flex-direction: column;
-  // //   width: 100%;
-  // //   justify-content: space-between;
-  // // }
+section .MenuAccordeon {
+  display: flex;
+  flex-direction: column;
+  // width: 335px;
+  justify-content: space-around;
+  margin: 0 20px 27px 20px;
+  gap: 10px;
 }

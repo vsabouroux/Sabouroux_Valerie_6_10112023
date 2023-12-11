@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start;
   // margin-left: 60px;
-  width: 365px;
+  // width: 365px;
   //   flex-direction: row;
   //   justify-content: flex-start;
   //   //   background-color: greenyellow;
@@ -33,6 +33,6 @@
 @media screen and (max-width: 376px) {
   .TagItem {
     font-size: 10px;
-    width: 115px;
+    width: 50px;
   }
 }

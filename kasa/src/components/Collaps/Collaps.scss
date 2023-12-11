@@ -4,7 +4,7 @@
   // width: 1023px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 
 .CollapseHeader {
@@ -16,15 +16,22 @@
   // max-width: 1023px;
   height: 54px;
   border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 .CollapseContent {
-  padding: 20px 0px 20px 20px;
+  padding: 10px 0px 20px 20px;
   // max-width: 1023px;
   background-color: #f6f6f6;
   color: #ff6060;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+ul {
   border-radius: 5px;
-  // list-style-type: circle;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
 h2 {
   font-size: 24px;
@@ -36,20 +43,32 @@ h2 {
 }
 @media screen and (max-width: 376px) {
   .CollapseItem {
-    display: flex;
-    flex-direction: column;
-    // flex-wrap: wrap;
-    // width: 100%;
-    // justify-content: space-between;
-    width: 335px;
-    height: 30px;
-    // margin: 20px;
-  }
-  .CollapsHeader {
-    padding: 20px;
-  }
-  h2 {
-    font-size: 13px;
-    font-weight: 500px;
+    .CollapseContent {
+      display: flex;
+      flex-direction: column;
+      // flex-wrap: wrap;
+      // width: 100%;
+      // justify-content: space-between;
+      width: 335px;
+      height: 30px;
+      // margin: 20px;
+    }
+    .CollapseHeader {
+      width: 335px;
+      padding: 0;
+      border-radius: 5px;
+      // font-size: 13px;
+      font-weight: 500px;
+    }
+    h2 {
+      font-size: 13px;
+    }
+    .CollapseContent {
+      font-size: 12px;
+    }
+    .Arrow img {
+      width: 16px;
+      height: 9px;
+    }
   }
 }
