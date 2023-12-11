@@ -173,10 +173,9 @@ section {
     width: 115px;
   }
   .MenuAccordeon {
-    flex-direction: column;
-    align-items: center;
-    // margin-left: 0; // Ajout pour réinitialiser la marge
-    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 27px;
   }
   .CollapsHeader {
     width: 325px;
