@@ -16,7 +16,6 @@
   // max-width: 1023px;
   height: 54px;
   border-radius: 10px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 .CollapseContent {
@@ -24,7 +23,6 @@
   // max-width: 1023px;
   background-color: #f6f6f6;
   color: #ff6060;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 ul {
@@ -38,8 +36,11 @@ h2 {
   color: white;
 }
 .Arrow img {
-  width: 24px;
-  height: 14px;
+  width: 32px;
+  height: 32px;
+  stroke-width: 1px;
+  stroke: black;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 376px) {
   .CollapseItem {
@@ -49,22 +50,26 @@ h2 {
       // flex-wrap: wrap;
       // width: 100%;
       // justify-content: space-between;
-      width: 335px;
-      height: 30px;
+      // width: 335px;
+      // height: 30px;
       // margin: 20px;
     }
     .CollapseHeader {
+      justify-content: space-evenly;
       width: 335px;
+      height: 30px;
+      gap: 225px;
       padding: 0;
       border-radius: 5px;
-      // font-size: 13px;
-      font-weight: 500px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
     h2 {
       font-size: 13px;
+      font-weight: 500px;
     }
     .CollapseContent {
       font-size: 12px;
+      // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
     .Arrow img {
       width: 16px;

@@ -114,17 +114,14 @@ section {
       // text-align: center;
 
       .GlobalLogement {
-        margin-bottom: 15px;
+        margin-bottom: 25px;
       }
-      // .Host {
-      //   margin-bottom: 5px;
-      // }
     }
     .HostGlobal {
       flex-direction: row-reverse;
       justify-content: space-between;
       width: 335px;
-      margin: 20px 0 20px 20px;
+      margin: 0 0 15px 20px;
 
       .Host {
         font-size: 12px;
@@ -137,10 +134,6 @@ section {
   }
 }
 
-// section .Host {
-//   display: flex;
-//   flex-direction: row-reverse;
-// }
 .TitreLogement {
   font-size: 24px;
 }

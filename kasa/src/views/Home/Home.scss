@@ -9,6 +9,13 @@ section.Appart {
   border-radius: 25px;
   padding: 56px;
   margin: 100px;
+  .Card {
+    background: linear-gradient(
+      180deg,
+      rgba(4, 231, 57, 0) 0%,
+      rgba(240, 10, 225, 0.5) 100%
+    );
+  }
 }
 
 @media screen and (max-width: 376px) {
@@ -17,13 +24,13 @@ section.Appart {
     justify-content: center; // Centre les cartes si la largeur de l'écran est inférieure à 1024px
     background-color: transparent;
     // padding-top: 27px;
-    // padding: 20px;
+    padding: 0;
     margin: 0;
     gap: 0;
   }
   .Card {
     width: 335px;
     height: 255px;
-    margin: 22px 0 22px 0;
+    margin: 0 0 20px;
   }
 }
