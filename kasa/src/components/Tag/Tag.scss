@@ -31,8 +31,20 @@
 }
 
 @media screen and (max-width: 376px) {
-  .TagItem {
-    font-size: 10px;
-    width: 50px;
+  .Tag {
+    flex-wrap: wrap;
+    width: 100%;
+    .Tag ul {
+      height: 18px;
+    }
+    .Tag li {
+      margin: 0;
+    }
+    .TagItem {
+      font-size: 10px;
+      width: auto;
+      margin-bottom: 16px;
+      // flex-shrink: 0; KESAKO ?
+    }
   }
 }

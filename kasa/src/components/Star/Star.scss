@@ -25,6 +25,9 @@
 }
 
 @media screen and (max-width: 376px) {
+  .star-global {
+    align-items: center;
+  }
   .star {
     left: 20px;
     font-size: 18px;

@@ -97,9 +97,11 @@ section {
     .Entete-HostGlobal .TitreLogement {
       font-size: 18px;
       width: 335px;
+      gap: 10px;
     }
     .Entete-HostGlobal .Location {
       font-size: 14px;
+      margin-bottom: 10px;
     }
 
     .Entete-HostGlobal {
@@ -113,18 +115,27 @@ section {
       width: 335px;
       // text-align: center;
 
-      .GlobalLogement {
-        margin-bottom: 25px;
-      }
+      // .GlobalLogement {
+      //   margin-bottom: 25px;
+      // }
+    }
+    .HostSemiGlobal {
+      gap: 10px;
+      align-items: center;
     }
     .HostGlobal {
       flex-direction: row-reverse;
       justify-content: space-between;
       width: 335px;
-      margin: 0 0 15px 20px;
+      margin: 20px 0 13px 20px;
 
       .Host {
         font-size: 12px;
+        width: 70px;
+        text-align: right;
+        line-height: 17px;
+        // align-items: center;
+        // padding-top: 0;
       }
       img {
         width: 32px;
@@ -132,33 +143,32 @@ section {
       }
     }
   }
-}
+  .TitreLogement {
+    font-size: 24px;
+  }
 
-.TitreLogement {
-  font-size: 24px;
-}
+  .slideshow {
+    // width: 335px;
+    // height: 255px;
+    margin: auto;
+  }
 
-.slideshow {
-  // width: 335px;
-  // height: 255px;
-  margin: auto;
-}
+  .prev img,
+  .next img {
+    width: 11.67px;
+    height: 19.8px;
+  }
 
-.prev img,
-.next img {
-  width: 11.67px;
-  height: 19.8px;
-}
+  .counter {
+    display: none;
+  }
 
-.counter {
-  display: none;
-}
-
-section .MenuAccordeon {
-  display: flex;
-  flex-direction: column;
-  // width: 335px;
-  justify-content: space-around;
-  margin: 0 20px 27px 20px;
-  gap: 10px;
+  section .MenuAccordeon {
+    display: flex;
+    flex-direction: column;
+    // width: 335px;
+    justify-content: space-around;
+    margin: 0 20px 27px 20px;
+    gap: 20px;
+  }
 }
