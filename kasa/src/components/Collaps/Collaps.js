@@ -6,6 +6,7 @@ import "./Collaps.scss";
 function CollapseItem({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
+  // déclaration d'une variable "poignée" pour la bascule en ouvert ou fermé du menu
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
