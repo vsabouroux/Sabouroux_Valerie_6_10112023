@@ -16,10 +16,5 @@ const StarRating = ({ rating }) => {
     </div>
   );
 };
-// j'aurais bien voulu que si on se trompe dans le fichier data il y ait une alerte mais ce n'est pas probant
-//juste les étoiles grises !
-// StarRating.propTypes = {
-//   rating: PropTypes.number.isRequired,
-// };
 
 export default StarRating;
