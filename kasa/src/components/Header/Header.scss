@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 45px 100px 45px 100px;
+  padding: 45px 100px 45px 100px;
 
   .kasa-logo {
     display: flex;
@@ -38,8 +38,8 @@
 }
 @media screen and (max-width: 376px) {
   .kasa-header {
-    flex-direction: row;
-    margin: 20px 20px 20px 20px;
+    // flex-direction: row;
+    padding: 20px 20px 27px 20px;
     // width: 335px;
 
     .kasa-logo {

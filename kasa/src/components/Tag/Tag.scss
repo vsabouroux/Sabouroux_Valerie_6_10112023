@@ -1,24 +1,16 @@
 .Tag {
   display: flex;
   justify-content: flex-start;
-  // margin-left: 60px;
-  // width: 365px;
-  //   flex-direction: row;
-  //   justify-content: flex-start;
-  //   //   background-color: greenyellow;
-  //   padding: 10px;
 }
 .Tag ul {
   display: flex;
-  height: 25px;
-  /* font-size: 34px; */
   gap: 10px;
   align-items: center;
   padding: 0;
 }
 .TagItem {
   display: flex;
-  width: 150px;
+  min-width: 84px;
   align-items: center;
   justify-content: center;
   padding: 8px 12px;
@@ -31,20 +23,16 @@
 }
 
 @media screen and (max-width: 376px) {
-  .Tag {
+  .Tag ul {
+    display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    .Tag ul {
-      height: 18px;
-    }
-    .Tag li {
-      margin: 0;
-    }
-    .TagItem {
-      font-size: 10px;
-      width: auto;
-      margin-bottom: 16px;
-      // flex-shrink: 0; KESAKO ?
-    }
+    // height: 18px;
+    padding-bottom: 24px;
+  }
+  .Tag li {
+    margin: 0;
+  }
+  .TagItem {
+    font-size: 10px;
   }
 }

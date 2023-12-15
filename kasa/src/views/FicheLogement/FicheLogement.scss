@@ -2,31 +2,34 @@ section {
   //   padding: 0 50px;
   max-width: 1440px;
   margin: auto;
+  padding: 0 100px;
 
   .Carrousel {
     width: 100%; // Pour occuper la largeur disponible
   }
   .Entete-HostGlobal {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 450px;
+    justify-content: space-between;
+    padding-top: 24px;
+    // gap: 450px;
 
     .Entete {
       display: flex;
       flex-direction: row;
-      gap: 440px;
+      // gap: 440px;
     }
     .GlobalLogement {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      width: 635px;
-      margin-left: 100px;
+      // width: 635px;
+      // margin-left: 100px;
     }
     .TitreLogement {
       // display: flex;
-      width: 635px;
+      // width: 635px;
       font-size: 36px;
       color: #ff6060;
       margin-bottom: 5px;
@@ -40,6 +43,7 @@ section {
   .HostSemiGlobal {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
   }
   .Host {
     font-size: 18px;
@@ -52,7 +56,8 @@ section {
     flex-direction: column;
     // justify-content: flex-end;
     // margin-top: 50px;
-    width: 164px;
+    // width: 164px;
+    gap: 30px;
     // margin-right: 20px;
 
     img {
@@ -65,14 +70,16 @@ section {
   .MenuAccordeon {
     display: flex;
     flex-direction: row;
+    margin-top: 24px;
     // max-width: 1240px;
     // width: 100%;
     justify-content: space-between;
     // gap: 0px;
     //margin: 0px 50px 50px;
     // margin-left: 100px;
-    margin: 30px 100px 50px;
-    gap: 76px;
+    // margin: 30px 100px 50px;
+    margin-bottom: 50px;
+    gap: 24px;
   }
   .CollapseHeader {
     width: 552px;
@@ -87,55 +94,45 @@ section {
 // Responsive mobile : breakpoint à 375px
 @media screen and (max-width: 376px) {
   section {
+    padding: 0 20px;
     .Carrousel {
       height: 255px;
-    }
-    .Entete-HostGlobal .GlobalLogement {
-      margin-left: 20px;
-      height: 100px;
     }
     .Entete-HostGlobal .TitreLogement {
       font-size: 18px;
       width: 335px;
       gap: 10px;
+      margin: 0;
     }
     .Entete-HostGlobal .Location {
       font-size: 14px;
-      margin-bottom: 10px;
+      padding-top: 5px;
+      padding-bottom: 10px;
     }
 
     .Entete-HostGlobal {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 0;
+      // gap: 0;
     }
     .Entete {
       flex-direction: column;
-      // align-items: center;
-      width: 335px;
-      // text-align: center;
-
-      // .GlobalLogement {
-      //   margin-bottom: 25px;
-      // }
     }
     .HostSemiGlobal {
       gap: 10px;
-      align-items: center;
     }
     .HostGlobal {
+      display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
-      width: 335px;
-      margin: 20px 0 13px 20px;
+      align-items: center;
+      gap: 20px;
 
       .Host {
         font-size: 12px;
         width: 70px;
         text-align: right;
         line-height: 17px;
-        // align-items: center;
-        // padding-top: 0;
       }
       img {
         width: 32px;
@@ -148,8 +145,6 @@ section {
   }
 
   .slideshow {
-    // width: 335px;
-    // height: 255px;
     margin: auto;
   }
 
@@ -166,9 +161,7 @@ section {
   section .MenuAccordeon {
     display: flex;
     flex-direction: column;
-    // width: 335px;
     justify-content: space-around;
-    margin: 0 20px 27px 20px;
     gap: 20px;
   }
 }

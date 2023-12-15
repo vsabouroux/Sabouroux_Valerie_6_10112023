@@ -43,13 +43,12 @@ const FicheLogement = ({ logements }) => {
               <div className="GlobalLogement">
                 <h1 className="TitreLogement">{title}</h1>
                 <div className="Location">{location}</div>
-                {/* erreur nom de propriété dans composant Tag. 
-       j'utilisais la propriété "content" au lieu de "tags". En effet, dans Tag.js c'est bien la props "tags" que j'utilise
-       il faut donc une cohérance */}
+         
+        
                 <Tag tags={tags} />
               </div>
             </div>
-
+            </div>
             <div className="HostGlobal">
               <div className="HostSemiGlobal">
                 <div className="Host">{host.name}</div>
@@ -61,7 +60,7 @@ const FicheLogement = ({ logements }) => {
         à cet endroit*/}
               <StarRating rating={parseInt(logement.rating)} />
             </div>
-          </div>
+         
           <div className="MenuAccordeon">
             <CollapseItem title="Description" content={description} />
             <CollapseItem

@@ -1,6 +1,5 @@
-import "./Card.scss";
 import { Link } from "react-router-dom";
-
+import "./Card.scss";
 // "Card" (vignettes de la pge Home) est le composant qui décrit de quoi il est fait
 //et la boucle "map" est faite sur la page qui doit afficher TOUS les logements soit la Home
 function Card({ title, picture, id }) {

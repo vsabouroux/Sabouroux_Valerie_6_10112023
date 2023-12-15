@@ -9,13 +9,6 @@ section.Appart {
   border-radius: 25px;
   padding: 56px;
   margin: 100px;
-  // .Card {
-  //   background: linear-gradient(
-  //     180deg,
-  //     rgba(4, 231, 57, 0) 0%,
-  //     rgba(240, 10, 225, 0.5) 100%
-  //   );
-  // }
 }
 
 @media screen and (max-width: 376px) {
@@ -28,9 +21,11 @@ section.Appart {
     margin: 0;
     gap: 0;
   }
-  .Card {
-    width: 335px;
-    height: 255px;
-    margin: 0 0 20px;
-  }
+  // .Card {
+  //   width: 335px;
+  //   height: 255px;
+  //   margin: 0 0 20px;
+  //
+
+  // }
 }

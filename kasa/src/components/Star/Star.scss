@@ -1,37 +1,21 @@
 .star-global {
   display: flex;
   flex-direction: row;
-  // justify-content: flex-end;
-  // width: 196px;
-  // margin-left: 1150px;
-  margin: 0;
-}
-.star {
-  // display: flex;
-  // flex-direction: row;
-  //
-  // left: 1190px;
-  // position: relative;
-  bottom: 50px;
-  // color: #ff6060;
-  font-size: 36px;
-}
-.star-vide {
-  // position: relative;
-  // left: 1190px;
-  bottom: 50px;
-  // color: #e3e3e3;
-  font-size: 36px;
-}
-@media screen and (max-width: 376px) {
-  .star-global {
-    align-items: center;
-  }
-  .star {
-    left: 20px;
-    font-size: 18px;
-  }
+  gap: 5px;
+
+  .star,
   .star-vide {
-    font-size: 18px;
+    width: 36px; // taille par défaut
+    height: 36px; // taille par défaut
+
+    @media screen and (max-width: 376px) {
+      width: 18px; // nouvelle taille pour la version mobile
+      height: 18px; // nouvelle taille pour la version mobile
+    }
+  }
+
+  .star-vide {
+    // Ajoutez d'autres styles spécifiques pour les étoiles vides si nécessaire
+    fill: #E3E3E3;
   }
 }

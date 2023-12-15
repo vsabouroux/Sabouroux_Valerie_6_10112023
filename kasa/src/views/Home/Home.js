@@ -19,8 +19,10 @@ function Home() {
           {/*Création boucle avec map pour afficher tous les logements présents dans le fichier Logements.json*/}
           {Logements.map(({ id, title, cover }) => (
             <Card
+              key={id}
               title={title}
               picture={cover}
+              className="Cover"
               id={id}
               alt={`${Logements.title}`}
             />
