@@ -6,8 +6,11 @@ function Card({ title, picture, id }) {
   return (
     <Link className="card-link" to={`/FicheLogement/${id}`}>
       <div className="Card">
+        <div className="Gradient"></div> 
+      
         <img src={picture} alt="logement" className="CardImage" />
         <h3>{title}</h3>
+       
       </div>
     </Link>
   );
