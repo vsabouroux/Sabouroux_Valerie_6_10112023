@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 import "./Star.scss";
 
 const Star = ({ filled }) => {
-  console.log(filled);
   return (
     <span className="star">
       {filled ? (

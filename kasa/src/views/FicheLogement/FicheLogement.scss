@@ -1,11 +1,11 @@
 section {
-  //   padding: 0 50px;
+
   max-width: 1440px;
   margin: auto;
   padding: 0 100px;
 
   .Carrousel {
-    width: 100%; // Pour occuper la largeur disponible
+    width: 100%; 
   }
   .Entete-HostGlobal {
     display: flex;
@@ -13,23 +13,20 @@ section {
     align-items: center;
     justify-content: space-between;
     padding-top: 24px;
-    // gap: 450px;
+    
 
     .Entete {
       display: flex;
       flex-direction: row;
-      // gap: 440px;
+     
     }
     .GlobalLogement {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      // width: 635px;
-      // margin-left: 100px;
+     
     }
     .TitreLogement {
-      // display: flex;
-      // width: 635px;
       font-size: 36px;
       color: #ff6060;
       margin-bottom: 5px;
@@ -54,11 +51,8 @@ section {
   .HostGlobal {
     display: flex;
     flex-direction: column;
-    // justify-content: flex-end;
-    // margin-top: 50px;
-    // width: 164px;
     gap: 30px;
-    // margin-right: 20px;
+ 
 
     img {
       width: 64px;
@@ -71,13 +65,7 @@ section {
     display: flex;
     flex-direction: row;
     margin-top: 24px;
-    // max-width: 1240px;
-    // width: 100%;
     justify-content: space-between;
-    // gap: 0px;
-    //margin: 0px 50px 50px;
-    // margin-left: 100px;
-    // margin: 30px 100px 50px;
     margin-bottom: 50px;
     gap: 24px;
   }

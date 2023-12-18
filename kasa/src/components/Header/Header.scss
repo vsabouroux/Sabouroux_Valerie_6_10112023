@@ -14,7 +14,6 @@
   nav {
     ul {
       display: flex;
-      // width: 309px;
       gap: 57px;
       justify-content: flex-end;
       list-style-type: none;
@@ -38,17 +37,11 @@
 }
 @media screen and (max-width: 376px) {
   .kasa-header {
-    // flex-direction: row;
     padding: 20px 20px 27px 20px;
-    // width: 335px;
+ 
 
     .kasa-logo {
       width: 145px;
-      // // width: 50%;
-      // height: 47px;
-      // // height: auto;
-      // margin-bottom: 15px;
-      // margin-bottom: 0;
     }
     nav {
       ul {

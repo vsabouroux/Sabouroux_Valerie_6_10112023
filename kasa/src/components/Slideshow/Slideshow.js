@@ -10,14 +10,14 @@ const Slideshow = ({ pictures }) => {
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % pictures.length);
   };
-  // ici la fonction fléchée va faire une sorte de boucle cad que si la diapo est la 1ere du tableau alors l'app va renvoyer la dernière photo
+  // ici la fonction fléchée va faire une sorte de boucler cad que si la diapo est la 1ere du tableau alors l'app va renvoyer la dernière photo
   // et sinon ce sera la précédente dans le tableau
   const prevSlide = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === 0 ? pictures.length - 1 : prevSlide - 1
     );
   };
-  //
+  
   const hideButtons = pictures.length === 1;
   return (
     <div className="slideshow">
@@ -25,18 +25,18 @@ const Slideshow = ({ pictures }) => {
         <>
           <button className="prev" onClick={prevSlide}>
             <img src={fleche_gauche} alt="fleche_gauche" />
-            {/* &#8249; */}
+          
           </button>
           <button className="next" onClick={nextSlide}>
             <img src={fleche_droite} alt="fleche_droite" />
           </button>
-          {/* &#8250; */}
+        
         </>
       )}
       <img
         key={currentSlide}
         src={pictures[currentSlide]}
-        alt={`Slide ${currentSlide + 1}`}
+        alt={`Logement ${currentSlide + 1}`}
       />
       {!hideButtons && (
         <div className="counter">

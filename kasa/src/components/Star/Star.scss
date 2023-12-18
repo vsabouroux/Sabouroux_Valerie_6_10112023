@@ -1,21 +1,22 @@
 .star-global {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   gap: 5px;
 
+  .star-vide {
+    fill: #E3E3E3;
+  }
   .star,
   .star-vide {
     width: 36px; // taille par défaut
-    height: 36px; // taille par défaut
-
-    @media screen and (max-width: 376px) {
-      width: 18px; // nouvelle taille pour la version mobile
-      height: 18px; // nouvelle taille pour la version mobile
-    }
+    height: 36px; 
+  
   }
-
+  @media screen and (max-width: 376px) {
+  .star,
   .star-vide {
-    // Ajoutez d'autres styles spécifiques pour les étoiles vides si nécessaire
-    fill: #E3E3E3;
+    width: 18px; // nouvelle taille pour la version mobile
+    height: 18px; 
   }
-}
+}}

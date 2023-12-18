@@ -1,7 +1,7 @@
-.Tag {
-  display: flex;
-  justify-content: flex-start;
-}
+// .Tag {
+//   display: flex;
+//   justify-content: flex-start;
+// }
 .Tag ul {
   display: flex;
   gap: 10px;
@@ -26,7 +26,6 @@
   .Tag ul {
     display: flex;
     flex-wrap: wrap;
-    // height: 18px;
     padding-bottom: 24px;
   }
   .Tag li {
