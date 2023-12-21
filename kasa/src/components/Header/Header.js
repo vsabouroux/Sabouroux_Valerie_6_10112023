@@ -9,22 +9,12 @@ function Header() {
       <nav id="sidebar">
         <ul>
           <li className="accueil">
-            <NavLink
-              to="/Home"
-              exact
-              activeClassName="active"
-              className="nav-link"
-            >
+            <NavLink to="/Home" className="nav-link">
               Accueil
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/APropos"
-              exact
-              activeClassName="active"
-              className="nav-link"
-            >
+            <NavLink to="/APropos" className="nav-link">
               A propos
             </NavLink>
           </li>

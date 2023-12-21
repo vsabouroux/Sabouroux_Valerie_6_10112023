@@ -1,11 +1,10 @@
 section {
-
   max-width: 1440px;
   margin: auto;
   padding: 0 100px;
 
   .Carrousel {
-    width: 100%; 
+    width: 100%;
   }
   .Entete-HostGlobal {
     display: flex;
@@ -13,18 +12,15 @@ section {
     align-items: center;
     justify-content: space-between;
     padding-top: 24px;
-    
 
     .Entete {
       display: flex;
       flex-direction: row;
-     
     }
     .GlobalLogement {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-     
     }
     .TitreLogement {
       font-size: 36px;
@@ -52,7 +48,6 @@ section {
     display: flex;
     flex-direction: column;
     gap: 30px;
- 
 
     img {
       width: 64px;
@@ -62,20 +57,16 @@ section {
     }
   }
   .MenuAccordeon {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-top: 24px;
     justify-content: space-between;
     margin-bottom: 50px;
     gap: 24px;
   }
   .CollapseHeader {
-    width: 552px;
     height: 50px;
     gap: 76px;
-  }
-  .CollapseContent {
-    max-width: 552px;
   }
 }
 
