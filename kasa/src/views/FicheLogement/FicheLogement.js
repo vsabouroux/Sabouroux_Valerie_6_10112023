@@ -9,15 +9,14 @@ import { useParams } from "react-router-dom";
 
 import "./FicheLogement.scss";
 
-// useParams = hook utilisé pour extraire les paramètres de l'URL dans un composant fonctionnel. Ici on veut récupérer que les "pictures" du logement
+// useParams = hook utilisé pour extraire les paramètres de l'URL dans un composant fonctionnel. Ici on veut récupérer notamment les "pictures" du logement
 // et on se repèrera avec l'id du logement
 
 const FicheLogement = ({ logements }) => {
   // Récupérer les informations du logement, grace è l'ID de URL et le data.json
   const { id } = useParams();
-  // console.log("ID du logement :", id);
+
   const logement = logements.find((logement) => logement.id === id);
-  // console.log("Logement trouvé :", logement);
 
   if (!logement) {
     // Rediriger vers la page NoMatch si le logement n'est pas trouvé. En fait ce n'est pas faire un "lien" mais une redirection ! avec "Navigate"
@@ -47,18 +46,18 @@ const FicheLogement = ({ logements }) => {
                 <Tag tags={tags} />
               </div>
             </div>
-         
-          <div className="HostGlobal">
-            <div className="HostSemiGlobal">
-              <div className="Host">{host.name}</div>
-              <img className="HostPicture" src={host.picture} alt="hôte" />
-            </div>
-            {/* parseInt convertit la valeur de logement.rating en un entier (nombre entier) en utilisant la fonction parseInt . En effet,
+
+            <div className="HostGlobal">
+              <div className="HostSemiGlobal">
+                <div className="Host">{host.name}</div>
+                <img className="HostPicture" src={host.picture} alt="hôte" />
+              </div>
+              {/* parseInt convertit la valeur de logement.rating en un entier (nombre entier) en utilisant la fonction parseInt . En effet,
         dans le fichier Logement.json, rating est une chaîne de caractère : "4". 
         On appelle le composant StarRating et on lui demande (on "passe" une props) d'aller récupérer le nombre d'étoiles du logement et de l'afficher
         à cet endroit*/}
-            <StarRating rating={parseInt(logement.rating)} />
-          </div>
+              <StarRating rating={parseInt(logement.rating)} />
+            </div>
           </div>
           <div className="MenuAccordeon">
             <CollapseItem title="Description" content={description} />
