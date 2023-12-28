@@ -5,12 +5,14 @@ import "./Collaps.scss";
 
 function CollapseItem({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
-
+  //Ajout animation css sur collapse
+  const [rotate, setRotate] = useState(false);
   // déclaration d'une variable "poignée" pour la bascule en ouvert ou fermé du menu
   const handleToggle = () => {
     setIsOpen(!isOpen);
+    setRotate(isOpen ? true : false);
   };
-
+  console.log(rotate);
   return (
     <div className="CollapseItem">
       <div className="CollapseHeader" onClick={handleToggle}>
@@ -19,11 +21,17 @@ function CollapseItem({ title, content }) {
           {isOpen ? (
             <img src={arrow_down} alt="Arrow Down" />
           ) : (
-            <img src={arrow_up} alt="Arrow Up" />
+            <img
+              className={rotate ? "animate_arrow" : ""}
+              src={arrow_up}
+              alt="Arrow Up"
+            />
           )}
         </span>
       </div>
-      {isOpen && <div className="CollapseContent">{content}</div>}
+      {isOpen && (
+        <div className="CollapseContent animate_collaps">{content}</div>
+      )}
     </div>
   );
 }
