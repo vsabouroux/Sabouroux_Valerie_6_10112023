@@ -12,7 +12,7 @@ function CollapseItem({ title, content }) {
     setIsOpen(!isOpen);
     setRotate(isOpen ? true : false);
   };
-  console.log(rotate);
+  // console.log(rotate);
   return (
     <div className="CollapseItem">
       <div className="CollapseHeader" onClick={handleToggle}>
